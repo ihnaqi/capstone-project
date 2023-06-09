@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Karla';
+  src: url('./assets/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  display: inline-flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 70px;
+  width: 30%;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-logo{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  display: inline-flex;
+  align-items: center;
+  width: 70%;
+  padding-block: 10px;
+  padding-left: 30px;
+  height: 70px;
+  vertical-align: top;
+}
+
+.nav-list{
+  display: flex;
+}
+
+.nav-list li{
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.nav-item{
+  padding: 6px;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 20;
+}
+
+ul li:last-child > a {
+  color: #f0950c;
+}
+
+.hero-container {
+  background-color: #495E57;
+  height: 420px;
 }
